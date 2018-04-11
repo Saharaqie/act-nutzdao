@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>cn.pa4j</groupId>
+    <artifactId>act-nutzdao</artifactId>
+    <packaging>jar</packaging>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>ACT NDao</name>
+    <description>The NutzDao Plugin for Actframework DB access</description>
+
+    <parent>
+        <groupId>org.actframework</groupId>
+        <artifactId>act-starter-parent</artifactId>
+        <version>1.8.5.0</version>
+    </parent>
+
+    <properties>
+        <nutzdao.version>1.r.65</nutzdao.version>
+        <act-jpa-common.version>1.2.3</act-jpa-common.version>
+        <hutool.version>4.0.9</hutool.version>
+    </properties>
+
+    <dependencies>
+
+        <dependency>
+            <groupId>org.nutz</groupId>
+            <artifactId>nutz</artifactId>
+            <version>${nutzdao.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.actframework</groupId>
+            <artifactId>act-jpa-common</artifactId>
+            <version>${act-jpa-common.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
